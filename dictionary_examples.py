@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-from collections import defaultdict
-
 d1 = dict()
 d2 = {'red': 5, 'green': 10, 'orange': 3}
 d3 = {}
@@ -50,20 +48,31 @@ if test_color in d6:
 print(d6.get(test_color))
 print(d6.get(test_color, -1))
 
-defd = defaultdict(list)
+print(d6.setdefault(test_color, -1))
+print(d6, '\n')
 
-print(defd['foo'])
-defd['foo'].append('A')
-defd['foo'].append('B')
-defd['bar'].append('C')
+more_colors = {'chartreuse': 6, 'navy': 9,
+               'charcoal grey': 2, 'blue': 1}
 
-print(defd, '\n')
+d6.update(more_colors)
+print(d6, '\n')
 
-words_by_letter = defaultdict(list)
-with open('DATA/alt.txt') as alt_in:
-    for raw_line in alt_in:
-        word = raw_line.rstrip()
-        first_letter = word[0]
-        words_by_letter[first_letter].append(word)
+print(d6.keys())
+print(d6.values())
 
-print(words_by_letter)
+print('green' in d6)
+print('forest green' in d6)
+print(len(d6))
+
+for color, color_value in d6.items():
+    print(color, color_value)
+print()
+
+print(d6.items(), '\n')
+
+
+for color, color_value in sorted(d6.items()):
+    print(f"{color:14s} {color_value:3d}")
+print()
+
+

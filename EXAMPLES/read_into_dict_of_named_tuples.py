@@ -7,8 +7,8 @@ knight = namedtuple('knight', 'title color quest comment')
 knight_info = {}
 with open('../DATA/knights.txt') as knights_in:
     for line in knights_in:
-        (knight_name, title, color, quest, comment) = line.rstrip('\n\r').split(":")
-        knight_info[knight_name] = knight(title, color, quest, comment)
+        (knight_name, k_title, k_color, quest, comment) = line.rstrip('\n\r').split(":")
+        knight_info[knight_name] = knight(k_title, k_color, quest, comment)
 
 for knight_name, knight in knight_info.items():
-        print(knight.title, knight_name)
+        print(knight.title, knight_name, knight.)
