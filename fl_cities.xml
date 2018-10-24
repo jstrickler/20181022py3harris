@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ASCII'?>
+<cities>
+  <city county="Brevard">
+    <cityname>Palm Bay</cityname>
+    <population>1234</population>
+  </city>
+  <city county="Brevard">
+    <cityname>Melbourne</cityname>
+    <population>1234</population>
+  </city>
+  <city county="Duval">
+    <cityname>Jacksonville</cityname>
+    <population>1234</population>
+  </city>
+  <city county="Dade">
+    <cityname>Miami</cityname>
+    <population>1234</population>
+  </city>
+  <city county="Orange">
+    <cityname>Orlando</cityname>
+    <population>1234</population>
+  </city>
+  <city county="Osceola">
+    <cityname>Kissimmee</cityname>
+    <population>1234</population>
+  </city>
+</cities>

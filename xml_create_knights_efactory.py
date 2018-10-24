@@ -23,6 +23,8 @@ def get_knight_info():
             info.append(flds)
     return info
 
+# E.knight
+# Element('knight')
 
 def build_tree(knight_recs):
     '''Build the new XML document'''

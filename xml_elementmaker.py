@@ -25,7 +25,7 @@ with open('DATA/longest_rivers.csv') as rivers_in:
         doc.append(
             RIVER(  # <7>
                 RIVER_NAME(row[0]),
-                RIVER_LENGTH(row[1])
+                E.length(row[1])  # or RIVER_LENGTH
             )
         )
 
